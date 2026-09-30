@@ -1,0 +1,25 @@
+
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;color:#102b52;background:#071d39}
+.app{height:100vh;display:flex;overflow:hidden;background:#dfefff}
+.sidebar{width:325px;background:rgba(4,25,57,.96);color:white;padding:30px 18px;display:flex;flex-direction:column;z-index:3}
+.brand{display:flex;align-items:center;gap:12px;font-size:32px;font-weight:700;margin:5px 10px 42px}
+.brand span,h1 span{color:#1682ff}.brand-mark{font-size:42px;color:#1682ff}
+button{border:0;font:inherit;cursor:pointer}.new-chat{height:58px;border-radius:12px;background:#1764bb;color:#fff;text-align:left;padding:0 22px;font-size:19px}
+nav{display:flex;flex-direction:column;gap:8px;margin-top:16px}nav button{background:transparent;color:#eef5ff;text-align:left;padding:15px 20px;font-size:18px;border-radius:10px}
+nav button:hover{background:rgba(255,255,255,.08)}
+.account{margin-top:auto;display:flex;gap:12px;align-items:center;padding:15px 10px;border-top:1px solid rgba(255,255,255,.12)}
+.avatar{width:42px;height:42px;border-radius:50%;background:#267fe1;display:grid;place-items:center}.account small{display:block;opacity:.65;margin-top:4px}
+.side-footer{text-align:center;color:#55a5ff;font-size:14px;line-height:1.7;padding-top:12px}
+.main{flex:1;min-width:0;position:relative}.content{height:100%;position:relative;background:linear-gradient(rgba(35,116,190,.18),rgba(3,24,54,.2)),url("/static/everest-wallpaper.png") center/cover no-repeat;overflow:hidden}
+.topbar{height:76px;position:absolute;left:0;right:0;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#fff}
+.menu{background:transparent;color:white;font-size:30px}.top-actions{font-size:28px}
+.watermark{position:absolute;right:8%;top:17%;font-size:72px;font-weight:700;color:rgba(255,255,255,.28);pointer-events:none}
+.welcome{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);width:min(780px,86%);background:rgba(248,251,255,.86);backdrop-filter:blur(10px);border-radius:22px;padding:34px 38px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.16)}
+.logo{font-size:58px;color:#1682ff}.welcome h1{font-size:42px;margin:0 0 8px}.welcome p{font-size:20px;font-style:italic;color:#315f95}.nepali{font-size:18px;color:#5276a2;margin:20px 0}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:14px}.quick button{padding:17px;border-radius:28px;background:rgba(255,255,255,.7);color:#156bd0;box-shadow:0 4px 14px rgba(0,50,120,.08)}
+.messages{position:absolute;left:8%;right:8%;top:90px;bottom:115px;overflow:auto;padding:15px 5px;display:flex;flex-direction:column;gap:14px}
+.msg{max-width:75%;padding:13px 17px;border-radius:17px;white-space:pre-wrap;line-height:1.5;box-shadow:0 5px 18px rgba(0,0,0,.08)}.user{align-self:flex-end;background:#1682ff;color:#fff;border-bottom-right-radius:5px}.assistant{align-self:flex-start;background:rgba(255,255,255,.9);color:#163b68;border-bottom-left-radius:5px}
+.composer{position:absolute;left:7%;right:7%;bottom:25px;height:72px;background:rgba(255,255,255,.95);border:2px solid #2b8cff;border-radius:38px;display:flex;align-items:center;padding:0 10px 0 20px;box-shadow:0 8px 28px rgba(0,0,0,.16)}
+.composer input{flex:1;border:0;outline:0;background:transparent;font-size:18px;color:#173b68;padding:0 14px}.attach{background:transparent;font-size:24px}.send{width:52px;height:52px;border-radius:50%;background:#1682ff;color:#fff;font-size:23px}
+@media(max-width:800px){.sidebar{width:240px}.brand{font-size:24px}.brand-mark{font-size:32px}.welcome{padding:25px 18px}.welcome h1{font-size:32px}.quick{grid-template-columns:1fr}.watermark{font-size:44px}}
+@media(max-width:600px){.sidebar{display:none}.messages{left:4%;right:4%}.composer{left:3%;right:3%}}

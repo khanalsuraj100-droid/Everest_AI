@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html lang="ne">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everest AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">▲</div>
+        <div>Everest <span>AI</span></div>
+      </div>
+
+      <button class="new-chat" id="newChat">💬 <span>New Chat</span></button>
+
+      <nav>
+        <button>▤ <span>Chat History</span></button>
+        <button>◒ <span>Explore</span></button>
+        <button>⚙ <span>Settings</span></button>
+      </nav>
+
+      <div class="account">
+        <div class="avatar">●</div>
+        <div><b>User</b><small>Local Account</small></div>
+      </div>
+      <div class="side-footer">Think&nbsp; • &nbsp;Learn&nbsp; • &nbsp;Grow<br>with Everest AI</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu" id="menu">☰</button>
+        <div class="top-actions">☼ &nbsp; ⚙</div>
+      </header>
+
+      <section class="content">
+        <div class="watermark">Everest AI</div>
+        <div class="welcome" id="welcome">
+          <div class="logo">▲</div>
+          <h1>Everest <span>AI</span></h1>
+          <p>Your AI Assistant for a Smarter Tomorrow</p>
+          <div class="nepali">सोध्नुहोस्, सिक्नुहोस्, नयाँ कुरा पत्ता लगाउनुहोस्...</div>
+
+          <div class="quick">
+            <button>💡 कुनै विषयमा जानकारी दिनुहोस्</button>
+            <button>‹/› कोड लेख्न मद्दत गर्नुहोस्</button>
+            <button>▧ तस्वीरको बारेमा बताउनुहोस्</button>
+            <button>💬 तपाईंले जे पनि सोध्न सक्नुहुन्छ...</button>
+          </div>
+        </div>
+
+        <div class="messages" id="messages"></div>
+
+        <form class="composer" id="form">
+          <button type="button" class="attach">📎</button>
+          <input id="input" autocomplete="off" placeholder="Message Everest AI..." />
+          <button class="send" type="submit">➤</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
