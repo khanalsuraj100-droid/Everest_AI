@@ -48,7 +48,12 @@ def message():
     con.commit()
 
     # Temporary response. AI API/local model will be connected in the next step.
-    reply = f"तपाईंले भन्नुभयो: {text}\n\nEverest AI अहिले प्रारम्भिक version मा चलिरहेको छ। अर्को चरणमा वास्तविक AI model जोडिनेछ।"
+    reply = """मलाई सहयोग गर्ने मौका दिनुभएकोमा धन्यवाद।
+तर माफ गर्नुहोस्, अहिले यो software maintenance मा रहेको हुनाले
+तपाईंलाई सहयोग गर्न सकिरहेको छैन।
+
+— Developer Suraj K
+Everest AI"""
 
     con.execute("INSERT INTO messages(role,content,created_at) VALUES(?,?,?)",
                 ("assistant", reply, datetime.now().isoformat(timespec="seconds")))
