@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import sqlite3
 from datetime import datetime
 import re
@@ -151,6 +151,12 @@ def generate_reply(question):
 # -------------------------------------------------
 # HOME
 # -------------------------------------------------
+
+@app.route("/sw.js")
+def service_worker():
+    return send_from_directory(app.static_folder, "sw.js",
+                               mimetype="application/javascript")
+
 
 @app.route("/")
 def home():

@@ -4,6 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Everest AI">
+  <link rel="manifest" href="/static/manifest.json">
+  <link rel="icon" href="/static/icons/everest.svg" type="image/svg+xml">
   <title>Everest AI</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -63,5 +69,14 @@
     </main>
   </div>
   <script src="/static/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch((error) => {
+          console.error('Everest AI service worker registration failed:', error);
+        });
+      });
+    }
+  </script>
 </body>
 </html>

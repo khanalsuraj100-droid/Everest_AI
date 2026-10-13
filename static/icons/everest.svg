@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#172554"/>
+  <path d="M55 385 210 105 278 235 325 166 457 385Z" fill="#e2e8f0"/>
+  <path d="m210 105 39 72-39-19-35 32Z" fill="#ffffff"/>
+  <path d="m278 235 47-69 35 84-43-19-24 28Z" fill="#93c5fd"/>
+  <path d="M55 385h402v30H55Z" fill="#38bdf8"/>
+  <text x="256" y="463" font-family="Arial,sans-serif" font-size="43" font-weight="bold" text-anchor="middle" fill="#ffffff">EVEREST AI</text>
+</svg>
